@@ -6,7 +6,7 @@
 
 <br>
 
-**ESP32 • BLE • RSSI • Trilateration • UHF RFID • ESP8266 • Altium Designer**
+**Electronics • Embedded Systems • BLE • RFID • Altium Designer • RTLS • Indoor Positioning Systems**
 
 <br>
 
