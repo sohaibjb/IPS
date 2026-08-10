@@ -131,7 +131,7 @@ The PCB was developed to consolidate these functions into a single hardware plat
 #### Schematic
 
 <p align="center">
-  <img src="./assets/ble/ips-ble-schematic.png" width="850">
+  <img src="./assets/ble/schematique-view-card.png" width="700">
 </p>
 
 <p align="center">
