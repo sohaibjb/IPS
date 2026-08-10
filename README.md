@@ -27,6 +27,8 @@ This project explores two distinct approaches for indoor localization and tracki
 The two approaches address indoor positioning from different perspectives.  
 The RFID system focuses on detecting and tracking tagged objects through known reader coverage areas, while the BLE system estimates the position of a target using radio-signal measurements.
 
+<hr>
+
 ## Studied Approaches
 
 ### UHF RFID Tracking
