@@ -1,6 +1,4 @@
-
 <div align="center">
-
 # Indoor Positioning System (IPS)
 
 <img src="./assets/ips-overview.png" width="420">
