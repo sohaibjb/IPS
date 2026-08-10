@@ -75,6 +75,10 @@ The BLE localization system follows a ranging-based positioning approach.
 
 The main processing chain is:
 
+<p align="center">
+  <img src="assets/ble/architecture-beacon.png" width="700">
+</p>
+
 `BLE Target → RSSI Measurements → Dynamic Calibration → Distance Estimation → Trilateration → Position (x, y)`
 
 Three BLE anchors are installed at known coordinates inside the localization area. The received signal strength between the target and each anchor is measured using RSSI.
