@@ -10,7 +10,7 @@
 
 <br>
 
-*Engineering Project — Electronic and Automatic Systems Engineering (GSEA)*  
+*2nd year Engineering Project - Electronic and Automatic Systems Engineering*  
 *ENSA Tangier · 2021–2022*
 
 </div>
