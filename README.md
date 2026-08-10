@@ -20,9 +20,10 @@ The first concept is based on **passive UHF RFID technology**.
   <img src="assets/rfid/uhf-rfid-system-architecture.png" width="700">
 </p>
 
-
+<p align="center">
   <em>UHF RFID tracking system architecture.</em>
 </p>
+ 
 
 Passive RFID tags attached to objects are detected by fixed UHF RFID readers installed at predefined locations. When a tag enters the reader's coverage area, the reader retrieves its unique identifier.
 
