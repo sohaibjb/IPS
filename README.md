@@ -14,7 +14,7 @@
 *ENSA Tangier · 2021–2022*
 
 </div>
-
+-------------------------------------------------------
 GPS signals are generally unavailable or unreliable inside buildings, which is why **Indoor Positioning Systems (IPS)** are used to determine the location of objects or people in environments where satellite-based positioning cannot operate reliably.
 
 This project explores two distinct approaches for indoor localization and tracking:
