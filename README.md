@@ -135,17 +135,17 @@ The PCB was developed to consolidate these functions into a single hardware plat
 </p>
 
 <p align="center">
-  <em>Complete schematic of the IPS-BLE board designed.</em>
+  <em>Complete schematic of the IPS-BLE board.</em>
 </p>
 
 #### PCB Layout
 
 <p align="center">
-  <img src="./assets/ble/ips-ble-pcb-2d.png" width="650">
+  <img src="./assets/ble/2d-card.png" width="650">
 </p>
 
 <p align="center">
-  <em>2D PCB layout of the IPS-BLE board.</em>
+  <em>2D PCB layout of the IPS-BLE board designed with Altium Designer.</em>
 </p>
 
 #### 3D PCB Representation
