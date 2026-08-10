@@ -9,8 +9,6 @@ This project was developed during the **2021–2022 academic year** as a **Proje
 
 # Indoor Positioning System (IPS)
 
-### BLE & UHF RFID Indoor Localization
-
 <img src="./assets/ips-overview.png" width="420">
 
 <br>
@@ -23,8 +21,6 @@ This project was developed during the **2021–2022 academic year** as a **Proje
 *ENSA Tangier · 2021–2022*
 
 </div>
-# Indoor Positioning System (IPS)
-
 
 GPS signals are generally unavailable or unreliable inside buildings, which is why **Indoor Positioning Systems (IPS)** are used to determine the location of objects or people in environments where satellite-based positioning cannot operate reliably.
 
