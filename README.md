@@ -16,6 +16,14 @@ The RFID system focuses on detecting and tracking tagged objects through known r
 
 The first concept is based on **passive UHF RFID technology**.
 
+<p align="center">
+  <img src="assets/rfid/uhf-rfid-system-architecture.png" width="700">
+</p>
+
+<p align="center">
+  <em>UHF RFID tracking system architecture.</em>
+</p>
+
 Passive RFID tags attached to objects are detected by fixed UHF RFID readers installed at predefined locations. When a tag enters the reader's coverage area, the reader retrieves its unique identifier.
 
 The RFID reader communicates with an **ESP8266** through an **RS232-to-TTL converter**. The ESP8266 then uses Wi-Fi connectivity to transmit the detected tag information toward a local server, where the data can be stored, processed, and visualized.
