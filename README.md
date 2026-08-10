@@ -135,7 +135,7 @@ The PCB was developed to consolidate these functions into a single hardware plat
 </p>
 
 <p align="center">
-  <em>Complete schematic of the IPS-BLE board designed in Altium Designer.</em>
+  <em>Complete schematic of the IPS-BLE board designed.</em>
 </p>
 
 #### PCB Layout
