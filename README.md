@@ -1,7 +1,8 @@
 <div align="center">
+  
 # Indoor Positioning System (IPS)
 
-<img src="./assets/ips-overview.png" width="420">
+<img src="./assets/project1.png" width="420">
 
 <br>
 
