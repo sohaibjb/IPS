@@ -153,11 +153,11 @@ The PCB was developed to consolidate these functions into a single hardware plat
 <table>
 <tr>
 <td align="center">
-  <img src="./assets/ble/ips-ble-3d-top.png" width="400"><br>
+  <img src="./assets/ble/top.png" width="400"><br>
   <em>Top view</em>
 </td>
 <td align="center">
-  <img src="./assets/ble/ips-ble-3d-bottom.png" width="400"><br>
+  <img src="./assets/ble/bottom.png" width="400"><br>
   <em>Bottom view</em>
 </td>
 </tr>
