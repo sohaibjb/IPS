@@ -35,6 +35,14 @@ This architecture provides a way to identify tagged objects and monitor their mo
 
 The second concept is based on **Bluetooth Low Energy (BLE)** and aims to estimate the position of a target inside an indoor environment.
 
+<p align="center">
+  <img src="assets/ble/ble-localization-architecture.png" width="700">
+</p>
+
+<p align="center">
+  <em>BLE localization process based on calibration, ranging and positioning.</em>
+</p>
+
 The system uses a BLE transmitter associated with the target and **three fixed BLE anchors** whose positions are known.
 
 The anchors measure the received signal strength (**RSSI**) from the target. Since RSSI values are strongly affected by the indoor environment, the proposed method first performs a dynamic calibration of the radio-propagation parameters.
