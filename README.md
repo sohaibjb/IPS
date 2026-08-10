@@ -6,7 +6,7 @@
 
 <br>
 
-**Electronics • Embedded Systems • BLE • RFID • PCB Design • Altium Designer • RTLS • Indoor Positioning Systems**
+**Electronics • Embedded Systems • BLE • RFID • PCB Design • Altium Designer • RTLS**
 
 <br>
 
