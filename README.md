@@ -58,6 +58,11 @@ An **ESP32** was selected as the hardware platform for the BLE system because it
 
 The UHF RFID system is based on the detection of passive RFID tags by readers positioned at known locations.
 
+<p align="center">
+  <img src="assets/rfid/architecture.png" width="700">
+</p>
+
+
 The main operating sequence is:
 
 `Passive UHF RFID Tag → UHF RFID Reader → RS232/TTL → ESP8266 → Wi-Fi → Local Server → Database / Visualization`
