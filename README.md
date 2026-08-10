@@ -1,10 +1,4 @@
 
-
-### Academic Context
-
-This project was developed during the **2021–2022 academic year** as a **Projet de Fin d'Année (PFA)** during the second year of the Engineering Degree in **Electronic and Automatic Systems Engineering (GSEA)** at **ENSA Tangier – Abdelmalek Essaâdi University**.
-
-
 <div align="center">
 
 # Indoor Positioning System (IPS)
