@@ -192,6 +192,6 @@ The PCB was developed to consolidate these functions into a single hardware plat
 
 ### UHF RFID Hardware
 
-The RFID implementation is currently based on interconnected modules consisting of the **UHF RFID reader, RS232-to-TTL interface, and ESP8266**.
+The UHF RFID architecture uses modular hardware consisting of a **long-range UHF RFID reader, an RS232-to-TTL interface, and an ESP8266**.
 
-A dedicated PCB for integrating the RFID communication and control electronics is planned as a future extension of the project.
+Unlike the BLE nodes, which required a compact battery-powered embedded platform, the RFID hardware is based on larger, self-contained modules intended for fixed installation. Consequently, no dedicated PCB was required for this architecture.
