@@ -4,9 +4,25 @@
 
 This project was developed during the **2021–2022 academic year** as a **Projet de Fin d'Année (PFA)** during the second year of the Engineering Degree in **Electronic and Automatic Systems Engineering (GSEA)** at **ENSA Tangier – Abdelmalek Essaâdi University**.
 
-The project provided an opportunity to study and apply concepts from embedded systems, wireless communication, electronics, and indoor localization through the design of BLE- and UHF RFID-based positioning architectures.
 
+<div align="center">
 
+# Indoor Positioning System (IPS)
+
+### BLE & UHF RFID Indoor Localization
+
+<img src="./assets/ips-overview.png" width="420">
+
+<br>
+
+**ESP32 • BLE • RSSI • Trilateration • UHF RFID • ESP8266 • Altium Designer**
+
+<br>
+
+*Engineering Project — Electronic and Automatic Systems Engineering (GSEA)*  
+*ENSA Tangier · 2021–2022*
+
+</div>
 # Indoor Positioning System (IPS)
 
 
