@@ -84,7 +84,8 @@ Each BLE beacon is built around an **ESP32**, which provides the Bluetooth Low E
 
 <p align="center">
   <img src="assets/ble/architecture-beacon.png" width="700">
-</p
+</p>
+  
 <p align="center">
   <em>Main hardware components of the BLE beacon.</em>
 </p>
