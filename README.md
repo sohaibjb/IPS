@@ -1,23 +1,35 @@
 # Indoor Positioning System (IPS)
 
-GPS signals are generally unavailable or unreliable inside buildings, this is why Indoor positioning systems are used to pinpoint the location of certain objects inside structures where satellite signals cannot reach.
+GPS signals are generally unavailable or unreliable inside buildings, which is why **Indoor Positioning Systems (IPS)** are used to determine the location of objects or people in environments where satellite-based positioning cannot operate reliably.
 
-This project explores two distinct approaches for indoor localization : 
+This project explores two distinct approaches for indoor localization and tracking:
 
-The first approach is based on **UHF RFID technology**. Passive RFID tags are detected by fixed UHF RFID readers installed at known locations. The reader is interfaced with an **ESP8266** through an RS232-to-TTL converter. The ESP8266 provides Wi-Fi connectivity to transmit tag detections to a server, where the information can be stored in a database and visualized. This concept is intended for indoor identification and movement tracking of tagged objects across predefined detection areas.
+- an **UHF RFID-based tracking system**, using passive UHF RFID tags, a fixed RFID reader, and an **ESP8266** for communication and data transmission;
+- a **Bluetooth Low Energy (BLE)-based localization system**, using RSSI measurements, dynamic radio-channel calibration, distance estimation, trilateration, and an **ESP32-based custom hardware platform**.
 
-The second approach is based on **Bluetooth Low Energy (BLE)** and is designed to estimate the 2D position of a target. Three fixed BLE anchors measure the received signal strength (RSSI) of a BLE transmitter attached to the target. Because RSSI is strongly affected by the indoor environment, the system includes a periodic calibration stage to estimate the radio propagation parameters. The calibrated RSSI measurements are then converted into distances, which are used with 2D trilateration to estimate the target coordinates `(x, y)`.
+The two approaches address indoor positioning from different perspectives.  
+The RFID system focuses on detecting and tracking tagged objects through known reader coverage areas, while the BLE system estimates the two-dimensional position `(x, y)` of a target using radio-signal measurements.
 
-For the BLE system, a dedicated **ESP32-based localization board** was also designed using **Altium Designer**. The hardware design includes the ESP32, power-management circuitry, Li-Ion battery charging using the TP4056, battery protection, and the required interfaces for the BLE localization node.
-
-The repository documents the system architectures, localization methods, hardware design, PCB development, and the associated positioning algorithms.
-
-## System Concepts
+## Studied Approaches
 
 ### UHF RFID Tracking
 
-`RFID Tag → UHF RFID Reader → RS232/TTL → ESP8266 → Wi-Fi → Server / Database`
+The first concept is based on **passive UHF RFID technology**.
 
-### BLE Localization
+Passive RFID tags attached to objects are detected by fixed UHF RFID readers installed at predefined locations. When a tag enters the reader's coverage area, the reader retrieves its unique identifier.
 
-`BLE Target → 3 BLE Anchors → RSSI Calibration → Distance Estimation → Trilateration → (x, y)`
+The RFID reader communicates with an **ESP8266** through an **RS232-to-TTL converter**. The ESP8266 then uses Wi-Fi connectivity to transmit the detected tag information toward a local server, where the data can be stored, processed, and visualized.
+
+This architecture provides a way to identify tagged objects and monitor their movement through known indoor detection areas.
+
+### BLE Indoor Localization
+
+The second concept is based on **Bluetooth Low Energy (BLE)** and aims to estimate the position of a target inside an indoor environment.
+
+The system uses a BLE transmitter associated with the target and **three fixed BLE anchors** whose positions are known.
+
+The anchors measure the received signal strength (**RSSI**) from the target. Since RSSI values are strongly affected by the indoor environment, the proposed method first performs a dynamic calibration of the radio-propagation parameters.
+
+The calibrated RSSI measurements are then converted into estimated distances between the target and each anchor. These distances are finally processed using **2D trilateration** to estimate the position of the target as coordinates `(x, y)`.
+
+An **ESP32** was selected as the hardware platform for the BLE system because it integrates BLE and Wi-Fi capabilities and can be used as the basis of the localization node.
