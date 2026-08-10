@@ -76,19 +76,30 @@ The ESP8266 then provides the network connection required to transmit the detect
 
 ### BLE Localization System Concept
 
+>
+
 The BLE localization system follows a ranging-based positioning approach.
 
+Each BLE beacon is built around an **ESP32**, which provides the Bluetooth Low Energy communication required for RSSI measurements. The beacon is powered by a rechargeable Li-Po battery and includes dedicated battery charging and protection circuitry to support autonomous operation.
 
 <p align="center">
   <img src="assets/ble/architecture-beacon.png" width="700">
+</p
+<p align="center">
+  <em>Main hardware components of the BLE beacon.</em>
 </p>
 
-
-The main processing chain is:
+The main localization processing chain is:
 
 `BLE Target → RSSI Measurements → Dynamic Calibration → Distance Estimation → Trilateration → Position (x, y)`
 
-The BLE beacons are installed at known coordinates inside the localization area. The received signal strength between the target and each anchor is measured using RSSI.
+Three BLE beacons are installed at known coordinates within the localization area. The received signal strength between the target and each beacon is measured using **RSSI**.
+
+Because indoor radio propagation is affected by obstacles, multipath propagation, furniture, and human movement, a calibration stage is used to estimate the propagation characteristics of the environment.
+
+The calibrated propagation model is then used to convert each RSSI measurement into an estimated target-to-beacon distance.
+
+Once the three distances are estimated, **2D trilateration** is applied to determine the position of the target.
 
 Because indoor radio propagation changes with obstacles, multipath effects, furniture and human movement, a calibration stage is used to estimate the propagation parameters of the environment.
 
