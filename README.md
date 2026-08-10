@@ -1,5 +1,11 @@
 # Indoor Positioning System (IPS)
 
+### Academic Context
+
+This project was developed during the **2021–2022 academic year** as a **Projet de Fin d'Année (PFA)** during the second year of the Engineering Degree in **Electronic and Automatic Systems Engineering (GSEA)** at **ENSA Tangier – Abdelmalek Essaâdi University**.
+
+The project provided an opportunity to study and apply concepts from embedded systems, wireless communication, electronics, and indoor localization through the design of BLE- and UHF RFID-based positioning architectures.
+
 GPS signals are generally unavailable or unreliable inside buildings, which is why **Indoor Positioning Systems (IPS)** are used to determine the location of objects or people in environments where satellite-based positioning cannot operate reliably.
 
 This project explores two distinct approaches for indoor localization and tracking:
