@@ -138,6 +138,33 @@ The PCB was developed to consolidate these functions into a single hardware plat
   <em>Complete schematic of the IPS-BLE board.</em>
 </p>
 
+<p align="center">
+  <img src="./assets/ble/espandbatterie.png" width="750">
+</p>
+
+<p align="center">
+  <em>Figure 44 — ESP32 and battery interface schematic.</em>
+</p>
+
+<p align="center">
+  <img src="./assets/ble/chargerbatterie.png" width="750">
+</p>
+
+<p align="center">
+  <em>Figure 46 — TP4056 Li-Ion battery charger schematic.</em>
+</p>
+
+<p align="center">
+  <img src="./assets/ble/protection_batterie.png" width="750">
+</p>
+
+<p align="center">
+  <em>Figure 47 — Li-Ion battery protection circuit schematic.</em>
+</p>
+
+
+
+
 #### PCB Layout
 
 <p align="center">
