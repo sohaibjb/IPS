@@ -59,7 +59,7 @@ An **ESP32** was selected as the hardware platform for the BLE system because it
 The UHF RFID system is based on the detection of passive RFID tags by readers positioned at known locations.
 
 <p align="center">
-  <img src="assets/rfid/architecture.png" width="700">
+  <img src="assets/rfid/architecture-rfid.png" width="700">
 </p>
 
 
@@ -78,15 +78,17 @@ The ESP8266 then provides the network connection required to transmit the detect
 
 The BLE localization system follows a ranging-based positioning approach.
 
-The main processing chain is:
 
 <p align="center">
   <img src="assets/ble/architecture-beacon.png" width="700">
 </p>
 
+
+The main processing chain is:
+
 `BLE Target → RSSI Measurements → Dynamic Calibration → Distance Estimation → Trilateration → Position (x, y)`
 
-Three BLE anchors are installed at known coordinates inside the localization area. The received signal strength between the target and each anchor is measured using RSSI.
+The BLE beacons are installed at known coordinates inside the localization area. The received signal strength between the target and each anchor is measured using RSSI.
 
 Because indoor radio propagation changes with obstacles, multipath effects, furniture and human movement, a calibration stage is used to estimate the propagation parameters of the environment.
 
