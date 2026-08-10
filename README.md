@@ -16,11 +16,11 @@ The RFID system focuses on detecting and tracking tagged objects through known r
 
 The first concept is based on **passive UHF RFID technology**.
 
-<p align="center">
+<<p align="center">
   <img src="assets/rfid/uhf-rfid-system-architecture.png" width="700">
 </p>
 
-<p align="center">
+
   <em>UHF RFID tracking system architecture.</em>
 </p>
 
