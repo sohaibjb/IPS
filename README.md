@@ -8,7 +8,7 @@ This project explores two distinct approaches for indoor localization and tracki
 - a **Bluetooth Low Energy (BLE)-based localization system**, using RSSI measurements, dynamic radio-channel calibration, distance estimation, trilateration, and an **ESP32-based custom hardware platform**.
 
 The two approaches address indoor positioning from different perspectives.  
-The RFID system focuses on detecting and tracking tagged objects through known reader coverage areas, while the BLE system estimates the two-dimensional position `(x, y)` of a target using radio-signal measurements.
+The RFID system focuses on detecting and tracking tagged objects through known reader coverage areas, while the BLE system estimates the position of a target using radio-signal measurements.
 
 ## Studied Approaches
 
