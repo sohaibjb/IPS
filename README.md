@@ -105,4 +105,66 @@ Because indoor radio propagation changes with obstacles, multipath effects, furn
 
 The calibrated propagation model is then used to transform each RSSI measurement into a target-to-anchor distance.
 
+
 Once the three distances are estimated, 2D trilateration is applied to determine the target coordinates.
+
+
+## Hardware Design
+
+The hardware development focused on translating the proposed system architectures into practical embedded platforms.
+
+### BLE Localization Board
+
+For the BLE localization system, a dedicated **IPS-BLE PCB** was designed using **Altium Designer**.
+
+The board integrates the main electronic functions required by the BLE node:
+
+- **ESP32** processing and wireless communication
+- Rechargeable **Li-Po battery** supply
+- **TP4056** battery charging circuit
+- Battery protection circuitry
+- Power distribution
+- Input/output connections
+
+The PCB was developed to consolidate these functions into a single hardware platform suitable for the BLE localization nodes.
+
+#### Schematic
+
+<p align="center">
+  <img src="./assets/ble/ips-ble-schematic.png" width="850">
+</p>
+
+<p align="center">
+  <em>Complete schematic of the IPS-BLE board designed in Altium Designer.</em>
+</p>
+
+#### PCB Layout
+
+<p align="center">
+  <img src="./assets/ble/ips-ble-pcb-2d.png" width="650">
+</p>
+
+<p align="center">
+  <em>2D PCB layout of the IPS-BLE board.</em>
+</p>
+
+#### 3D PCB Representation
+
+<table>
+<tr>
+<td align="center">
+  <img src="./assets/ble/ips-ble-3d-top.png" width="400"><br>
+  <em>Top view</em>
+</td>
+<td align="center">
+  <img src="./assets/ble/ips-ble-3d-bottom.png" width="400"><br>
+  <em>Bottom view</em>
+</td>
+</tr>
+</table>
+
+### UHF RFID Hardware
+
+The RFID implementation is currently based on interconnected modules consisting of the **UHF RFID reader, RS232-to-TTL interface, and ESP8266**.
+
+A dedicated PCB for integrating the RFID communication and control electronics is planned as a future extension of the project.
